@@ -128,7 +128,7 @@ class critical {
 	 * @return	boolean	Line matches test.
 	 */
 	public function _notMbstringFunctions($line) {
-		$regex = "#(?:strpos|strlen)\(#i";
+		$regex = "#(?:\sstrpos|\sstrlen)\(#i";
 		if (preg_match($regex, $line)) {
 			return true;
 		}
